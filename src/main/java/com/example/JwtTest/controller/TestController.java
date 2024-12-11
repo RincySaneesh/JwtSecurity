@@ -1,11 +1,8 @@
-package com.example.JwtTest;
+package com.example.JwtTest.controller;
 
 import com.example.JwtTest.entity.User;
 import com.example.JwtTest.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -36,5 +33,4 @@ public class TestController {
         userRepository.save(user);
         return "Success1";
     }
-
 }
